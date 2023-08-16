@@ -481,6 +481,7 @@ class DAGApi(object):
                 'all': [
                     'limit',
                     'offset',
+                    'tags'
                 ],
                 'required': [],
                 'nullable': [
