@@ -420,6 +420,7 @@ class DAGApi(object):
             Keyword Args:
                 limit (int): The numbers of items to return.. [optional] if omitted the server will use the default value of 100
                 offset (int): The number of items to skip before starting to collect the result set.. [optional]
+                tags (array): Tags if any to consider in the filter
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -506,14 +507,18 @@ class DAGApi(object):
                         (int,),
                     'offset':
                         (int,),
+                    'tags':
+                        (list,),
                 },
                 'attribute_map': {
                     'limit': 'limit',
                     'offset': 'offset',
+                    'tags': 'tags',
                 },
                 'location_map': {
                     'limit': 'query',
                     'offset': 'query',
+                    'tags': 'query',
                 },
                 'collection_format_map': {
                 }
